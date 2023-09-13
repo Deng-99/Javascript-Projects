@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Tetris Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="title-area">
+      <h1 id="title">Super Tetris</h1>
+    </div>
+
+    <div class="game-container">
+      <div id="container-settings" class="container-settings">
+        <div id="game-settings" class="game-settings">
+          <h2><u>Game Settings</u></h2>
+          <div>
+            <button id="start" class="sett" type="button">Start</button>
+          </div>
+          <br />
+          <div>
+            <button id="pause" class="sett" type="button">Pause/Resume</button>
+          </div>
+          <br />
+          <div>
+            <button id="restart" class="restart-button">Restart</button>
+          </div>
+          <br />
+          <div>
+            <button id="quit" class="sett" type="button">Quit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <div id="game-board">
+          <!-- your tetris pieces will be placed inside this div -->
+        </div>
+      </div>
+      <div id="score-control" class="score-controls-container">
+        <div class="score-container">
+          <div class="score">
+            <div id="score">Score:<span id="score-num"></span></div>
+          </div>
+        </div>
+
+        <div class="controls-container">
+          <h2><u>Controls</u></h2>
+          <ul>
+            <li>Left arrow: Move left</li>
+            <li>Right arrow: Move right</li>
+            <li>Up arrow: Rotate</li>
+            <li>Down arrow: Drop faster</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <script src="tetris.js"></script>
+  </body>
+</html>

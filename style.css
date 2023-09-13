@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(35, 43, 50);
+}
+.title {
+  position: fixed;
+  background-color: #ffdf00;
+}
+.game-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust the margin as needed to create space */
+}
+
+.score-controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.score {
+  height: 40px;
+  width: 120px;
+  background-color: rgb(18, 235, 177);
+  border: 2px solid #333;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.controls-container {
+  background-color: rgb(18, 235, 177);
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 35px;
+  margin-bottom: 200px;
+}
+
+.controls-container h2 {
+  margin-left: 15px;
+}
+
+.controls-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.score-container li {
+  margin-top: 55px;
+  margin-left: 35px;
+}
+.container-settings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25%;
+  padding: 20px;
+  height: 40px;
+  width: min-content;
+}
+.sett {
+  display: block;
+  margin: 0 auto;
+}
+button {
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  background-color: #ffdf00;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(6, 6, 6, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.game-settings {
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 350px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  align-items: center;
+  background-color: rgb(18, 235, 177);
+  border: 2px black #333;
+}
+.title-area {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  color: #ffdf00;
+}
+
+h1 {
+  color: rgb(225, 196, 29);
+}
+
+.game-area {
+  align-items: center;
+  background-color: rgb(254, 252, 252);
+  width: 340px;
+  height: 600px;
+  margin-left: 60px;
+  margin-bottom: 55px;
+  margin-top: auto;
+}
+/* CSS for the game board container */
+#game-board {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1px;
+  position: relative;
+}
+
+#game-board div {
+  background-color: black;
+}
+
+.occupied {
+  background-color: rgb(230, 222, 5); /* Color for occupied cells */
+  border: 1px solid black; /* Optional: Add a border for the occupied cells */
+  /* Add any other styles you want for occupied cells */
+}
